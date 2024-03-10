@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="B-FIT - Home">
+    <meta name="keywords" content="b-fit fitness centre programs">
+    <title>B-FIT Fitness Centre - Programs</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="B-FIT"></a>
+        </div>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="programs.html" class="active">Programs</a></li>
+              <li><a href="nutrition.html">Nutrition</a></li>
+              <li><a href="testimonials.html">Testimonials</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Our Fitness Programs</h1>
+
+        <div class="program">
+        <img src="img/weight_loss_challenge.jpg" alt="Weight Loss Challenge">
+        <h2>Weight Loss Challenge</h2>
+        <p>A structured program aimed at helping participants lose weight through a combination of cardiovascular exercise, strength training, and nutrition guidance.</p>
+        </div>
+
+        <div class="program">
+        <img src="img/muscle_building_program.jpg" alt="Muscle Building Program">
+        <h2>Muscle Building Program</h2>
+        <p>A workout plan designed to increase muscle mass and strength, incorporating resistance training exercises targeting major muscle groups.</p>
+        </div>
+
+        <div class="program">
+        <img src="img/yoga_and_meditation_series.jpg" alt="Yoga and Meditation Series">
+        <h2>Yoga and Meditation Series</h2>
+        <p>A series of yoga classes and guided meditation sessions focused on stress reduction, relaxation, and improving overall well-being.</p>
+        </div>
+
+        <div class="program">
+        <img src="img/hiit_workouts.jpg" alt="HIIT Workouts">
+        <h2>HIIT (High-Intensity Interval Training) Workouts</h2>
+        <p>Short, intense workouts that alternate between bursts of high-intensity exercise and periods of rest or lower-intensity activity, proven to improve cardiovascular health and calorie burn.</p>
+        </div>
+
+        <div class="program">
+        <img src="img/outdoor_fitness_challenges.jpg" alt="Outdoor Fitness Challenges">
+        <h2>Outdoor Fitness Challenges</h2>
+        <p>Events or challenges encouraging participants to engage in outdoor activities such as hiking, running, or cycling, promoting physical activity and exploration of the outdoors.</p>
+        </div>
+
+        <div class="program">
+        <img src="img/specialized_training_programs.jpg" alt="Specialized Training Programs">
+        <h2>Specialized Training Programs</h2>
+        <p>Programs tailored to specific fitness goals or interests, such as marathon training, obstacle course preparation, or sports-specific conditioning.</p>
+        </div>
+
+        <div class="program">
+        <img src="img/flexibility_training.jpg" alt="Flexibility Training">
+        <h2>Flexibility Training</h2>
+        <p>A series of exercises and stretches aimed at improving flexibility, mobility, and range of motion, suitable for all fitness levels.</p>
+        </div>
+
+        <div class="program">
+        <img src="img/circuit_training.jpg" alt="Circuit Training">
+        <h2>Circuit Training</h2>
+        <p>A high-intensity workout comprising a series of exercises performed consecutively with minimal rest, targeting multiple muscle groups and enhancing cardiovascular endurance.</p>
+        </div>
+
+        <div class="program">
+        <img src="img/pilates_classes.jpg" alt="Pilates Classes">
+        <h2>Pilates Classes</h2>
+        <p>Structured classes focusing on core strength, flexibility, and overall body conditioning through controlled movements and breath awareness.</p>
+        </div>
+
+        <h3>Find Your Perfect Program</h3>
+
+        <form id="find_program">
+        <div>
+            <label for="goal">What is your primary fitness goal?</label><br>
+            <input type="radio" id="weight_loss" name="goal" value="weight_loss">
+            <label for="weight_loss">Weight Loss</label>
+            <input type="radio" id="muscle_building" name="goal" value="muscle_building">
+            <label for="muscle_building">Muscle Building</label>
+            <input type="radio" id="flexibility" name="goal" value="flexibility">
+            <label for="flexibility">Flexibility</label>
+        </div>
+
+        <div>
+            <label for="level">What is your fitness level?</label><br>
+            <input type="radio" id="beginner" name="level" value="beginner">
+            <label for="beginner">Beginner</label>
+            <input type="radio" id="intermediate" name="level" value="intermediate">
+            <label for="intermediate">Intermediate</label>
+            <input type="radio" id="advanced" name="level" value="advanced">
+            <label for="advanced">Advanced</label>
+        </div>
+
+        <div>
+            <label for="preference">Do you have any specific preferences?</label><br>
+            <input type="checkbox" id="group_classes" name="preference[]" value="group_classes">
+            <label for="group_classes">Group Classes</label>
+            <input type="checkbox" id="personal_training" name="preference[]" value="personal_training">
+            <label for="personal_training">Personal Training</label>
+        </div>
+
+        <div>
+            <label for="experience">How much experience do you have with fitness programs?</label><br>
+            <input type="radio" id="novice" name="experience" value="novice">
+            <label for="novice">Novice (little to no experience)</label>
+            <input type="radio" id="intermediate_exp" name="experience" value="intermediate_exp">
+            <label for="intermediate_exp">Intermediate (some experience)</label>
+            <input type="radio" id="advanced_exp" name="experience" value="advanced_exp">
+            <label for="advanced_exp">Advanced (experienced athlete)</label>
+        </div>
+
+        <div>
+            <label for="time">How much time can you commit to exercise per week?</label><br>
+            <select id="time" name="time">
+                <option value="">Select an option</option>
+                <option value="1-3">1-3 hours</option>
+                <option value="4-6">4-6 hours</option>
+                <option value="7+">7+ hours</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="equipment">Do you have access to gym equipment?</label><br>
+            <input type="radio" id="yes" name="equipment" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="equipment" value="no">
+            <label for="no">No</label>
+        </div>
+
+        <div>
+            <label for="age">What is your age range?</label><br>
+            <input type="radio" id="under_18" name="age" value="under_18">
+            <label for="under_18">Under 18</label>
+            <input type="radio" id="18_30" name="age" value="18_30">
+            <label for="18_30">18-30</label>
+            <input type="radio" id="31_50" name="age" value="31_50">
+            <label for="31_50">31-50</label>
+            <input type="radio" id="over_50" name="age" value="over_50">
+            <label for="over_50">Over 50</label>
+        </div>
+
+        <div>
+            <label for="diet">Do you follow any specific diet?</label><br>
+            <select id="diet" name="diet">
+                <option value="">Select an option</option>
+                <option value="None">None</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Paleo">Paleo</option>
+                <option value="Keto">Keto</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="text" id="diet" name="diet">
+        </div>
+
+        <div>
+            <label for="injury">Do you have any existing injuries or health conditions?</label><br>
+            <select id="injury" name="injury">
+                <option value="">Select an option</option>
+                <option value="None">None</option>
+                <option value="Back pain">Back pain</option>
+                <option value="Joint pain">Joint pain</option>
+                <option value="Arthritis">Arthritis</option>
+                <option value="Heart disease">Heart disease</option>
+                <option value="Diabetes">Diabetes</option>
+            </select>
+        </div>
+
+        <div>
+            <button type="button" onclick="findProgram()">Find My Program</button>
+        </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 B-FIT. All rights reserved.</p>
+    </footer>
+</body>
+</html>
