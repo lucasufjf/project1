@@ -2,10 +2,16 @@
 header{
     display: flex;
     justify-content: space-between;
-    background: #000000d4;
+    
     position: fixed;
     width: 100%;
     top: 0;
+    
+  
+    
+}
+.activeHeader{
+    background: #000000bf;
     backdrop-filter: blur(6px);
 }
 .headerNav{
@@ -28,7 +34,7 @@ body{
     height: 5vh;
 }
 .logo{
-    padding: 2vh;
+    padding: 2vh 0 2vh 4vh;
 }
 
 .logoA{
@@ -66,7 +72,7 @@ a{
 
 .user{
     display: flex;
-    margin-right: 2vh;
+    margin-right: 4vh;
 }
 .icon{
     width: 5vh;
@@ -117,4 +123,25 @@ a{
   .navButtons:hover:before, .navButtons:focus:before, .navButtons:active:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+  }
+  .mainImage{
+    background-image: url(/project1/img/pexels-leon-ardho-1552242\ \(1\).jpg);
+    background-size: cover;
+    height: 100vh;
+    
+    padding: 0 18vh;
+  }
+
+  .firstSection{
+    margin-top: -100vh;
+    padding-top: 10vh;
+    height: 100vh;
+    color: white;
+  }
+  .mainH1{
+    margin: 0;
+    padding-top: 14vh;
+    color: white;
+    font-size: 75px;
+    text-align: center;
   }
