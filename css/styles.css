@@ -1,20 +1,21 @@
-
-header{
+header {
     display: flex;
     justify-content: space-between;
-    
+
     position: fixed;
     width: 100%;
     top: 0;
-    
-  
-    
+
+
+
 }
-.activeHeader{
+
+.activeHeader {
     background: #000000bf;
     backdrop-filter: blur(6px);
 }
-.headerNav{
+
+.headerNav {
     display: flex;
     justify-content: space-evenly;
     padding: 0;
@@ -22,22 +23,27 @@ header{
     height: 100%;
     margin: 0;
 }
-li{
+
+li {
     list-style: none;
     margin: 0 .5vh;
-    
+
 }
-body{
+
+body {
     margin: 0;
+    background: #0e0e0e;
 }
-.logoImage{
+
+.logoImage {
     height: 5vh;
 }
-.logo{
+
+.logo {
     padding: 2vh 0 2vh 4vh;
 }
 
-.logoA{
+.logoA {
     display: block;
     height: 5vh;
 }
@@ -57,7 +63,7 @@ body{
 } */
 
 
-.navButtonsActive{
+.navButtonsActive {
     color: white;
     background: #ffffff29;
     color: white;
@@ -65,16 +71,18 @@ body{
     border-radius: 5vh;
     font-family: "Oswald", sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
     color: inherit;
 }
 
-.user{
+.user {
     display: flex;
     margin-right: 4vh;
 }
-.icon{
+
+.icon {
     width: 5vh;
     color: #656565;
     cursor: not-allowed;
@@ -97,8 +105,9 @@ a{
     padding: 1vh 3vh;
     border-radius: 5vh;
     font-family: "Oswald", sans-serif;
-  }
-  .navButtons:before {
+}
+
+.navButtons:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -118,30 +127,60 @@ a{
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
     border-radius: 5vh;
-  }
- 
-  .navButtons:hover:before, .navButtons:focus:before, .navButtons:active:before {
+}
+
+.navButtons:hover:before,
+.navButtons:focus:before,
+.navButtons:active:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
-  }
-  .mainImage{
-    background-image: url(/project1/img/pexels-leon-ardho-1552242\ \(1\).jpg);
-    background-size: cover;
-    height: 100vh;
-    
-    padding: 0 18vh;
-  }
+}
 
-  .firstSection{
+.mainImage {
+    background: linear-gradient(0deg, rgba(14, 14, 14, 1) 0%, rgba(0, 0, 0, 0) 50%), url(/project1/img/pexels-leon-ardho-1552242\ \(1\).jpg);
+    background-size: cover;
+    height: 120vh;
+
+    padding: 0 18vh;
+}
+
+.firstSection {
     margin-top: -100vh;
     padding-top: 10vh;
     height: 100vh;
     color: white;
-  }
-  .mainH1{
+}
+
+.mainH1 {
     margin: 0;
     padding-top: 14vh;
     color: white;
     font-size: 75px;
     text-align: center;
-  }
+}
+
+.image {
+    width:-webkit-fill-available;
+}
+
+.imageDiv {
+    width: 50%;
+    padding: 2vh;
+}
+
+section {
+    margin: 10vh 5vh;
+    background: white;
+}
+
+.textImage {
+    width: 50%;
+    padding: 5vh;
+}
+
+.split {
+    display: flex;
+}
+h2{
+    font-size: 6vh;
+}
