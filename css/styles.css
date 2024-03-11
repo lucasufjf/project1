@@ -184,3 +184,10 @@ section {
 h2{
     font-size: 6vh;
 }
+
+footer{
+    color: #ffffff6b;
+    border-top: solid 1px #ffffff42;
+    text-align: center;
+    padding: 1vh;
+}
