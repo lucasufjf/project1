@@ -1,25 +1,31 @@
+
 header{
     display: flex;
     justify-content: space-between;
-    background: black;
+    background: #000000d4;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    backdrop-filter: blur(6px);
 }
-.headerbuttons{
+.headerNav{
     display: flex;
     justify-content: space-evenly;
     padding: 0;
-    height: 6vh;
     align-items: center;
+    height: 100%;
+    margin: 0;
 }
 li{
     list-style: none;
-    margin: 0 15px;
+    margin: 0 .5vh;
     
 }
 body{
     margin: 0;
 }
 .logoImage{
-    height: 6vh;
+    height: 5vh;
 }
 .logo{
     padding: 2vh;
@@ -27,5 +33,88 @@ body{
 
 .logoA{
     display: block;
-    height: 6vh;
+    height: 5vh;
 }
+
+/* .navButtons{
+    color: white;
+    padding: 1vh 3vh;
+    border-radius: 5vh;
+    font-family: "Oswald", sans-serif;
+} */
+
+/* .navButtons:hover{
+    color: white;
+    padding: 1vh 3vh;
+    border-radius: 5vh;
+    background: #ffffff29;
+} */
+
+
+.navButtonsActive{
+    color: white;
+    background: #ffffff29;
+    color: white;
+    padding: 1vh 3vh;
+    border-radius: 5vh;
+    font-family: "Oswald", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.user{
+    display: flex;
+    margin-right: 2vh;
+}
+.icon{
+    width: 5vh;
+    color: #656565;
+    cursor: not-allowed;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;500;600;700;800&family=Oswald:wght@200..700&display=swap');
+
+.navButtons {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    color: white;
+    padding: 1vh 3vh;
+    border-radius: 5vh;
+    font-family: "Oswald", sans-serif;
+  }
+  .navButtons:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff29;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    border-radius: 5vh;
+  }
+ 
+  .navButtons:hover:before, .navButtons:focus:before, .navButtons:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
