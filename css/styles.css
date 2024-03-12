@@ -157,12 +157,12 @@ a {
     background-position: center;
 }
 .testimonialImage {
-    background: linear-gradient(0deg, rgba(14, 14, 14, 1) 0%, rgba(0, 0, 0, 0) 50%, rgba(14, 14, 14, 1) 100%), url(/project1/img/cooking.jpg);
+    background: linear-gradient(0deg, rgba(14, 14, 14, 1) 0%, rgba(0, 0, 0, 0) 50%, rgba(14, 14, 14, 1) 100%), url(/project1/img/testimonies.jpg);
     background-size: cover;
     height: 78vh;
     text-align: center;
     padding: 0 18vh;
-    background-position: center;
+    background-position: top;
 }
 .contactImage {
     background: linear-gradient(0deg, rgba(14, 14, 14, 1) 0%, rgba(0, 0, 0, 0) 50%, rgba(14, 14, 14, 1) 100%), url(/project1/img/weights.jpg);
@@ -431,4 +431,16 @@ input {
 
 .inputContact{
     width:-webkit-fill-available;
+}
+blockquote{
+    font-size: larger;
+    margin: 6vh 0;
+    text-align: center;
+}
+cite{
+    float: right;
+    font-size: larger;
+}
+.testimoniCard{
+    margin: 10vh 24vh;
 }
