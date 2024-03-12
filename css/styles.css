@@ -1,7 +1,7 @@
 header {
     display: flex;
     justify-content: space-between;
-
+    z-index: 999;
     position: fixed;
     width: 100%;
     top: 0;
@@ -316,7 +316,12 @@ footer {
     height: 80vh;
     text-align: center;
     border-radius: 3px;
+    transition: transform .2s;
 
+}
+.card:hover{
+    transform: scale(1.05);
+    background-color: #f9ccac;
 }
 
 .cardContainer {
