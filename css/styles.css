@@ -68,7 +68,6 @@ body {
     background: #ffffff29;
     color: white;
     padding: 1vh 3vh;
-    border-radius: 5vh;
     font-family: "Oswald", sans-serif;
 }
 
@@ -103,7 +102,6 @@ a {
     transition-duration: 0.3s;
     color: white;
     padding: 1vh 3vh;
-    border-radius: 5vh;
     font-family: "Oswald", sans-serif;
 }
 
@@ -126,7 +124,7 @@ a {
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-    border-radius: 5vh;
+   
 }
 
 .navButtons:hover:before,
