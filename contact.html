@@ -34,29 +34,40 @@
     </div>
 
     <main>
-    <section>
-        <p>Have a question or want to learn more about our services? Fill out the form below and we'll get back to you as soon as possible.</p>
-        <form id="contact-form">
-            <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+        <section class="split contactBox">
+
+            <div class="imageDiv">
+                <div class="cardIMGcontainer2">
+                    <img src="/project1/img/contact.jpg" alt="contact">
+                 
+                </div>
+                
             </div>
-            <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <div class="textImage">
+                <p>Have a question or want to learn more about our services? Fill out the form below and we'll get back to you as soon as possible.</p>
+                <form id="contact-form">
+                    <div  class="divcalcNut">
+                    <label for="name">Name:</label>
+                    <input class="inputContact" type="text" id="name" name="name" required>
+                    </div>
+                    <div  class="divcalcNut">
+                    <label for="email">Email:</label>
+                    <input class="inputContact" type="email" id="email" name="email" required>
+                    </div>
+                    <div  >
+                    <label for="message">Message:</label>
+                    <textarea  class="inputContact" id="message" name="message" required></textarea>
+                    </div>
+                    <div >
+                    <button class=" buttonPrimary" type="submit">Send Message<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="iconButton">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                      </svg>
+                      
+                      </button>
+                    </div>
+                </form>
             </div>
-            <div>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            </div>
-            <div>
-            <button type="submit">Send Message</button>
-            </div>
-        </form>
-    </section>
-    <section>
-        <img src="img/contact.jpg">
-    </section>
+        </section>
     </main>
 
     <footer>
