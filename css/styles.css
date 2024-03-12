@@ -167,7 +167,7 @@ a {
 .contactImage {
     background: linear-gradient(0deg, rgba(14, 14, 14, 1) 0%, rgba(0, 0, 0, 0) 50%, rgba(14, 14, 14, 1) 100%), url(/project1/img/contact.jpg);
     background-size: cover;
-    height: 78vh;
+    height: 100vh;
     text-align: center;
     padding: 0 18vh;
     background-position: center;
