@@ -5,9 +5,6 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-
-
-
 }
 
 .activeHeader {
@@ -25,15 +22,12 @@ header {
 }
 
 li {
-  
     margin: 0 .5vh;
-
 }
 
 .liNavbar {
     list-style: none;
     margin: 0 .5vh;
-
 }
 
 body {
@@ -53,7 +47,6 @@ body {
     display: block;
     height: 5vh;
 }
-
 
 
 .navButtonsActive {
@@ -147,7 +140,7 @@ a {
 }
 
 .programsImage {
-    background: linear-gradient(0deg, rgba(14,14,14,1) 0%, rgba(0,0,0,0) 50%, rgba(14,14,14,1) 100%), url(/project1/img/jump.jpg);
+    background: linear-gradient(0deg, rgba(14, 14, 14, 1) 0%, rgba(0, 0, 0, 0) 50%, rgba(14, 14, 14, 1) 100%), url(/project1/img/jump.jpg);
     background-size: cover;
     height: 80vh;
     text-align: center;
@@ -155,6 +148,30 @@ a {
     background-position: center;
 }
 
+.nutritionImage {
+    background: linear-gradient(0deg, rgba(14, 14, 14, 1) 0%, rgba(0, 0, 0, 0) 50%, rgba(14, 14, 14, 1) 100%), url(/project1/img/cooking.jpg);
+    background-size: cover;
+    height: 78vh;
+    text-align: center;
+    padding: 0 18vh;
+    background-position: center;
+}
+.testimonialImage {
+    background: linear-gradient(0deg, rgba(14, 14, 14, 1) 0%, rgba(0, 0, 0, 0) 50%, rgba(14, 14, 14, 1) 100%), url(/project1/img/cooking.jpg);
+    background-size: cover;
+    height: 78vh;
+    text-align: center;
+    padding: 0 18vh;
+    background-position: center;
+}
+.contactImage {
+    background: linear-gradient(0deg, rgba(14, 14, 14, 1) 0%, rgba(0, 0, 0, 0) 50%, rgba(14, 14, 14, 1) 100%), url(/project1/img/contact.jpg);
+    background-size: cover;
+    height: 78vh;
+    text-align: center;
+    padding: 0 18vh;
+    background-position: center;
+}
 .firstSection {
     margin-top: -100vh;
     padding-top: 10vh;
@@ -198,7 +215,8 @@ section {
 h2 {
     font-size: 6vh;
 }
-h3{
+
+h3 {
     font-size: 4vh;
 }
 
@@ -276,21 +294,23 @@ footer {
     font-size: 3vh;
 }
 
-.callToAction{
+.callToAction {
     color: #bad546;
     text-align: center;
     padding: 0 30vh 11vh 30vh;
 }
 
-.program{
+.program {
     width: 33%;
 }
-.containerPrograms{
+
+.containerPrograms {
     display: flex;
     flex-wrap: wrap;
     margin: 0 5vh
 }
-.card{
+
+.card {
     background-color: white;
     padding: 1.5vh;
     height: 80vh;
@@ -298,30 +318,36 @@ footer {
     border-radius: 3px;
 
 }
-.cardContainer{
+
+.cardContainer {
     padding: 2vh;
-   
+
 }
 
 
-
-
-  
-  .cardIMGcontainer img {
+.cardIMGcontainer img {
     width: 100%;
     height: 35vh;
-  }
-  
-  .cardIMGcontainer img {
-    object-fit: cover;
-  }
-  .calculator{
-    background: white;
-    margin: 4vh;
-    padding: 3vh ;
-  }
+}
 
-  @keyframes show {
+.cardIMGcontainer img {
+    object-fit: cover;
+}
+
+.calculator {
+    background: white;
+    margin: 5vh 39vh;
+    padding: 4vh 8vh;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.secondtitle {
+    text-align: center;
+    color: #bad546;
+}
+
+@keyframes show {
     from {
         opacity: 0%;
     }
@@ -331,7 +357,64 @@ footer {
     }
 }
 
-.smooth{
+.smooth {
     animation-name: show;
     animation-duration: 1s;
+}
+
+.labelQ {
+    font-weight: 600;
+    font-size: 2.5vh;
+    line-height: 6vh;
+}
+
+select {
+    padding: 2vh 7vh 2vh 3vh;
+    background-color: white;
+    border: thin solid rgb(48, 48, 48);
+    display: inline-block;
+    font: inherit;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 2px;
+}
+
+
+select.minimal {
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) calc(1.5em + 2px), calc(100% - 15px) calc(1.5em + 2px), calc(106% - 3.2em) 0.3em;
+    background-size: 5px 5px, 5px 5px, 1px 2.5em;
+    background-repeat: no-repeat;
+}
+
+select.minimal:focus {
+
+    background-repeat: no-repeat;
+    border-color: #f9832f;
+    outline: 0;
+}
+
+
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+
+
+input {
+    padding: 2vh 4vh;
+}
+
+.iconButton {
+    height: 2.5vh;
+    margin-left: 0.5vh;
+    margin-bottom: -5px;
+}
+
+.divcalcNut {
+    margin-bottom: 20px;
 }
