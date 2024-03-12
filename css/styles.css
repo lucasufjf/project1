@@ -263,3 +263,9 @@ footer {
     align-items: center;
     font-size: 3vh;
 }
+
+.callToAction{
+    color: #bad546;
+    text-align: center;
+    padding: 0 30vh 11vh 30vh;
+}
