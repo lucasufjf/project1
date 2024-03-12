@@ -124,7 +124,7 @@ a {
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-   
+
 }
 
 .navButtons:hover:before,
@@ -139,6 +139,14 @@ a {
     background-size: cover;
     height: 120vh;
 
+    padding: 0 18vh;
+}
+
+.aboutImage {
+    background: linear-gradient(0deg, rgba(14, 14, 14, 1) 0%, rgba(0, 0, 0, 0) 50%), url(/project1/img/pexels-leon-ardho-1552252.jpg);
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
     padding: 0 18vh;
 }
 
@@ -158,7 +166,7 @@ a {
 }
 
 .image {
-    width:-webkit-fill-available;
+    width: -webkit-fill-available;
 }
 
 .imageDiv {
@@ -179,19 +187,18 @@ section {
 .split {
     display: flex;
 }
-h2{
+
+h2 {
     font-size: 6vh;
 }
 
-footer{
+footer {
     color: #ffffff6b;
     border-top: solid 1px #ffffff42;
     text-align: center;
     padding: 1vh;
 }
-.{
-    
-}
+
 .buttonPrimary {
     display: inline-block;
     vertical-align: middle;
@@ -210,7 +217,8 @@ footer{
     cursor: pointer;
     margin-top: 3vh;
 }
-  .buttonPrimary:before {
+
+.buttonPrimary:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -229,11 +237,29 @@ footer{
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-  }
-  .buttonPrimary:hover, .buttonPrimary:focus, .buttonPrimary:active {
+}
+
+.buttonPrimary:hover,
+.buttonPrimary:focus,
+.buttonPrimary:active {
     color: white;
-  }
-  .buttonPrimary:hover:before, .buttonPrimary:focus:before, .buttonPrimary:active:before {
+}
+
+.buttonPrimary:hover:before,
+.buttonPrimary:focus:before,
+.buttonPrimary:active:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
-  }
+}
+
+.imgAbout {
+    height: 22vh;
+}
+
+.aboutBfit {
+    display: flex;
+    color: white;
+    height: 60vh;
+    align-items: center;
+    font-size: 3vh;
+}
