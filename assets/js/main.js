@@ -120,5 +120,8 @@ const calculateBMI = (e) => {
         // Add and remove colour
         calculateMessage.classList.remove('color-green')
         calculateMessage.classList.add('color-red')
+
+        // Show message
+        calculateMessage.textContent = 'Please, fill all the fields*'
     }
 }
