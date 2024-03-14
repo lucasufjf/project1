@@ -256,3 +256,8 @@
     background-color: var(--body-color);
     box-shadow: 0 4px 8px #090b0b4d;
   }
+
+  /* Active link */
+.active-link {
+    color: var(--first-color);
+  }
