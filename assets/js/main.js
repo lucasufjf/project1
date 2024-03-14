@@ -175,5 +175,8 @@ const sendEmail = (e) => {
         // add and remove colour
         contactMessage.classList.remove('color-green')
         contactMessage.classList.add('color-red')
+
+        // show message
+        contactMessage.textContent = 'You must enter an email'
     }
 }
