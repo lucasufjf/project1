@@ -166,3 +166,11 @@ elements for EmailJS integration */
 const contactForm = document.getElementById('contact-form'),
     contactMessage = document.getElementById('contact-message'),
     contactUser = document.getElementById('contact-user')
+
+const sendEmail = (e) => {
+    e.preventDefault()
+
+    // We check if the field has a value
+    if (contactUser.value === '') {
+    }
+}
