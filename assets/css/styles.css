@@ -801,5 +801,20 @@
     position: absolute;
     transform: translateY(1rem);
   }
+
+  /* =============== SCROLL BAR =============== */
+::-webkit-scrollbar {
+    width: 0.6rem;
+    border-radius: .5rem;
+    background-color: #272825;
+  }
   
+  ::-webkit-scrollbar-thumb {
+    background-color: #41423d;
+    border-radius: .5rem;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #5b5d56;
+  }
   
