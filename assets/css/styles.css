@@ -622,4 +622,74 @@
     color: var(--title-color-black);
   }
 
+  /* =============== CALCULATE =============== */
+.calculate {
+    padding-bottom: 0;
+  }
+  
+  .calculate_container {
+    row-gap: 4rem;
+  }
+  
+  .calculate_content .section_titles {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .calculate_description {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  .calculate_form {
+    display: grid;
+    row-gap: 1rem;
+  }
+  
+  .calculate_box {
+    position: relative;
+    border: 2px solid var(--first-color-light);
+    border-radius: 0.5rem;
+  }
+  
+  .calculate_input {
+    width: 100%;
+    background: transparent;
+    padding: 20px 56px 20px 24px;
+    outline: none;
+    border: none;
+    color: var(--text-color);
+  }
+  
+  .calculate_input::-webkit-outer-spin-button,
+  .calculate_input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .calculate_input[type=number] {
+    -moz-appearance: textfield;
+  }
+  
+  .calculate_label {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.25rem;
+    color: var(--title-color);
+  }
+  
+  .calculate_form .button {
+    margin-top: 1.5rem;
+  }
+  
+  .calculate_img {
+    /* width: 200px; */
+    justify-self: center;
+  }
+  
+  .calculate_message {
+    position: absolute;
+    transform: translateY(1rem);
+  }
+
   
