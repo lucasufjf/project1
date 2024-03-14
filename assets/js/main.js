@@ -133,13 +133,13 @@ const calculateBMI = (e) => {
         const cm = calculateCm.value / 100,
             kg = calculateKg.value,
             bmi = Math.round(kg / (cm * cm))
-        
+
         // show BMI status
-        if(bmi < 18.5) {
+        if (bmi < 18.5) {
             // add colour and display message
             calculateMessage.classList.add('color-green')
             calculateMessage.textContent = `Your BMI is ${bmi}, is underweight`
-        } else if(bmi < 25) {
+        } else if (bmi < 25) {
             calculateMessage.classList.add('color-green')
             calculateMessage.textContent = `Your BMI is ${bmi}, is normal`
         } else {
@@ -158,3 +158,11 @@ const calculateBMI = (e) => {
     }
 }
 calculateForm.addEventListener('submit', calculateBMI)
+
+
+/* =============== EMAIL JS =============== */
+/* Defined JS variables to manage the contact form 
+elements for EmailJS integration */
+const contactForm = document.getElementById('contact-form'),
+    contactMessage = document.getElementById('contact-message'),
+    contactUser = document.getElementById('contact-user')
