@@ -117,6 +117,8 @@ const calculateBMI = (e) => {
 
     // We check if the fields have a value
     if (calculateCm.value === '' || calculateKg.value === '') {
-        
+        // Add and remove colour
+        calculateMessage.classList.remove('color-green')
+        calculateMessage.classList.add('color-red')
     }
 }
