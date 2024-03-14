@@ -362,3 +362,15 @@
   .button_flex:hover i {
     transform: translateX(.25rem);
   }
+
+  /* =============== LOGOS =============== */
+.logos_container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .logos_img {
+    width: 120px;
+    filter: grayscale(100%);
+  }
