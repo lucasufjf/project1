@@ -183,5 +183,9 @@ const sendEmail = (e) => {
         setTimeout(() => {
             contactMessage.textContent = ''
         }, 3000)
+    } else {
+        /* Implemented EmailJS functionality to send form data */
+        // serviceId - templateId - #form - publicKey
+        emailjs.sendForm('service_1nllsid', 'template_op2u9yl', '#contact-form', 'jtPMwhZnrHV16l0xY')
     }
 }
