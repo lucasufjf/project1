@@ -72,3 +72,16 @@ const scrollActive = () => {
         }
     })
 }
+
+
+/* =============== SHOW SCROLL UP =============== */ 
+/* Implemented functionality to display a scroll-to-top 
+button when the user scrolls beyond a certain point */
+const scrollUp = () => {
+    const scrollUp = document.getElementById('scroll-up')
+
+    // when the scroll is higher that 350vh, add the show-scroll class
+    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                : scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
