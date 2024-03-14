@@ -22,6 +22,7 @@ if(navClose) {
     })
 }
 
+
 /* =============== REMOVE MENU MOBILE =============== */
 /* Implemented functionality to remove the mobile menu 
 when any navigation link is clicked */
@@ -34,3 +35,17 @@ const linkAction = () => {
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
+/* =============== CHANGE BACKGROUND HEADER =============== */
+/* Implemented functionality to dynamically change the background 
+of the header based on scroll position */
+const scrollHeader = () => {
+    const header = document.getElementById('header')
+
+    /* when the scroll is greater than 50 viewport height, 
+    add the scroll-header class to the header tag */
+    this.scrollY >= 50 ? header.classList.add('bg-header')
+                       : header.classList.remove('bg-header')
+}
+window.addEventListener('scroll', scrollHeader)
