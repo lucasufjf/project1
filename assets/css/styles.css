@@ -261,3 +261,69 @@
 .active-link {
     color: var(--first-color);
   }
+
+  /* =============== HOME =============== */
+.home {
+    position: relative;
+    padding-bottom: 0;
+  }
+  
+  .home_container {
+    padding-top: 4rem;
+    row-gap: 3rem;
+  }
+  
+  .home_data {
+    text-align: center;
+  }
+  
+  .home_subtitle {
+    font-size: var(--bigger-font-size);
+    -webkit-text-stroke: 1px var(--second-color);
+    color: transparent;
+  }
+  
+  .home_title {
+    font-size: var(--biggest-font-size);
+    margin: .5rem 0;
+  }
+  
+  .home_subtitle,
+  .home_title {
+    letter-spacing: 1.5px;
+  }
+  
+  .home_description {
+    margin-bottom: 2.5rem;
+  }
+  
+  .home_triangle {
+    height: 325px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  }
+  
+  .home_triangle-1 {
+    width: 105px;
+    background-color: var(--first-color);
+  }
+  
+  .home_triangle-2 {
+    width: 205px;
+    background-color: var(--first-color-alt);
+  }
+  
+  .home_triangle-3 {
+    width: 305px;
+    background-color: var(--first-color-dark);
+  }
+  
+  .home_img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 350px;
+    margin: 0 auto;
+  }
