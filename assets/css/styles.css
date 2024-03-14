@@ -327,3 +327,38 @@
     width: 350px;
     margin: 0 auto;
   }
+
+  /* =============== BUTTON =============== */
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    padding: 18px 32px;
+    border: 2px solid var(--first-color-light);
+    counter-reset: var(--title-color-black);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background .3s;
+    border-radius: 0.5rem;
+  }
+  
+  .button:hover {
+    background-color: var(--first-color-alt);
+  }
+  
+  .button i {
+    font-size: 1.25rem;
+    transition: transform .3s;
+  }
+  
+  .button_flex {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .5rem;
+    background-color: var(--second-color);
+    border: none;
+  }
+  
+  .button_flex:hover i {
+    transform: translateX(.25rem);
+  }
