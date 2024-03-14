@@ -85,3 +85,14 @@ const scrollUp = () => {
                 : scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
+
+
+/* =============== SCROLL REVEAL ANIMATION =============== */
+/* Configure the Scroll Reveal library to animate elements 
+when they come into view during scrolling */
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400
+})
