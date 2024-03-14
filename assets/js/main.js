@@ -206,3 +206,4 @@ const sendEmail = (e) => {
         contactUser.value = ''
     }
 }
+contactForm.addEventListener('submit', sendEmail)
