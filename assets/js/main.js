@@ -157,3 +157,4 @@ const calculateBMI = (e) => {
         }, 4000)
     }
 }
+calculateForm.addEventListener('submit', calculateBMI)
