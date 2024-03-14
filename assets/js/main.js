@@ -172,5 +172,8 @@ const sendEmail = (e) => {
 
     // We check if the field has a value
     if (contactUser.value === '') {
+        // add and remove colour
+        contactMessage.classList.remove('color-green')
+        contactMessage.classList.add('color-red')
     }
 }
