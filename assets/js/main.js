@@ -187,5 +187,20 @@ const sendEmail = (e) => {
         /* Implemented EmailJS functionality to send form data */
         // serviceId - templateId - #form - publicKey
         emailjs.sendForm('service_1nllsid', 'template_op2u9yl', '#contact-form', 'jtPMwhZnrHV16l0xY')
+            .then(() => {
+                /* Added callback functions to handle successful form submission 
+                and error handling in EmailJS integration */
+                // show message and add colour
+                contactMessage.classList.add('color-green')
+                contactMessage.textContent = 'You have been registered successfully!'
+
+                // remove message after 3s
+                setTimeout(() => {
+                    contactMessage.textContent = ''
+                }, 3000)
+            }, (error) => {
+                // mail sending error
+                alert('Oops! Something went wrong...', error)
+            })
     }
 }
