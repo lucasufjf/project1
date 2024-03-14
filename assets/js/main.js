@@ -202,5 +202,7 @@ const sendEmail = (e) => {
                 // mail sending error
                 alert('Oops! Something went wrong...', error)
             })
+        // clean input field
+        contactUser.value = ''
     }
 }
