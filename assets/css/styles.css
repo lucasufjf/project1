@@ -55,4 +55,108 @@
     }
   }
 
+  /* =============== BASE =============== */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
   
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body,
+  button,
+  input {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+  }
+  
+  body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+  }
+  
+  h1,
+  h2,
+  h3 {
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--title-color-black);
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* =============== REUSABLE CSS CLASSES =============== */
+  .container {
+    max-width: 1124px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
+  
+  .section {
+    padding: 4.5rem 0 2rem;
+  }
+  
+  .section_data {
+    display: flex;
+    flex-direction: column;
+    row-gap: .75rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .section_title,
+  .section_title-border {
+    font-size: var(--big-font-size);
+    letter-spacing: 1.5px;
+  }
+  
+  .section_subtitle {
+    font-size: var(--h2-font-size);
+    font-family: var(--second-font);
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    color: var(--first-color);
+    transform: rotate(-2deg);
+  }
+  
+  .section_titles {
+    display: flex;
+    column-gap: .75rem;
+    justify-content: center;
+  }
+  
+  .section_title-border {
+    -webkit-text-stroke: 1px var(--text-color);
+    color: transparent;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .main {
+    overflow: hidden; /* For animation ScrollReveal */
+  }
+  
+  .color-red {
+    color: #ed5a5a;
+  }
+  
+  .color-green {
+    color: var(--first-color);
+  }
