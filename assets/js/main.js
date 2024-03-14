@@ -178,5 +178,10 @@ const sendEmail = (e) => {
 
         // show message
         contactMessage.textContent = 'You must enter an email'
+
+        // remove message after 3s
+        setTimeout(() => {
+            contactMessage.textContent = ''
+        }, 3000)
     }
 }
