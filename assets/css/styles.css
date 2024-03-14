@@ -245,3 +245,8 @@
     border: none;
     color: var(--title-color);
   }
+
+  /* Show menu */
+.show-menu {
+    right: 0;
+  }
