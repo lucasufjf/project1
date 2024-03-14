@@ -123,10 +123,15 @@ const calculateBMI = (e) => {
 
         // Show message
         calculateMessage.textContent = 'Please, fill all the fields*'
-        
+
         // Remove message 3s later
         setTimeout(() => {
             calculateMessage.textContent = ''
         }, 3000)
+    } else {
+        // BMI Formula
+        const cm = calculateCm.value / 100,
+            kg = calculateKg.value,
+            bmi = Math.round(kg / (cm * cm))
     }
 }
