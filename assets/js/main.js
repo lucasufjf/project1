@@ -146,5 +146,9 @@ const calculateBMI = (e) => {
             calculateMessage.classList.add('color-green')
             calculateMessage.textContent = `Your BMI is ${bmi}, is overweight`
         }
+
+        // clean input fields
+        calculateCm.value = ''
+        calculateKg.value = ''
     }
 }
