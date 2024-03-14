@@ -3,12 +3,12 @@
 the navigation menu when the toggle button is clicked, 
 and to hide the menu when the close button is clicked */
 const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+    navToggle = document.getElementById('nav-toggle'),
+    navClose = document.getElementById('nav-close')
 
 /* Menu show */
 // Validate if constant exists
-if(navToggle) {
+if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
     })
@@ -16,7 +16,7 @@ if(navToggle) {
 
 /* Menu hidden */
 // Validate if constant exists
-if(navClose) {
+if (navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
     })
@@ -46,7 +46,7 @@ const scrollHeader = () => {
     /* when the scroll is greater than 50 viewport height, 
     add the scroll-header class to the header tag */
     this.scrollY >= 50 ? header.classList.add('bg-header')
-                       : header.classList.remove('bg-header')
+        : header.classList.remove('bg-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
@@ -61,11 +61,11 @@ const scrollActive = () => {
 
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight,
-              sectionTop = current.offsetTop - 58,
-              sectionId = current.getAttribute('id'),
-              sectionsClass = document.querySelector('.nav_menu a[href*=' + sectionId + ']')
+            sectionTop = current.offsetTop - 58,
+            sectionId = current.getAttribute('id'),
+            sectionsClass = document.querySelector('.nav_menu a[href*=' + sectionId + ']')
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             sectionsClass.classList.add('active-link')
         } else {
             sectionsClass.classList.remove('active-link')
@@ -74,7 +74,7 @@ const scrollActive = () => {
 }
 
 
-/* =============== SHOW SCROLL UP =============== */ 
+/* =============== SHOW SCROLL UP =============== */
 /* Implemented functionality to display a scroll-to-top 
 button when the user scrolls beyond a certain point */
 const scrollUp = () => {
@@ -82,7 +82,7 @@ const scrollUp = () => {
 
     // when the scroll is higher that 350vh, add the show-scroll class
     this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
-                : scrollUp.classList.remove('show-scroll')
+        : scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
 
@@ -99,7 +99,15 @@ const sr = ScrollReveal({
 
 /* Implemented Scroll Reveal animations for various elements */
 sr.reveal(`.home_data, .footer_container, .footer_group`)
-sr.reveal(`.home_img`, {delay: 700, origin: 'bottom'})
-sr.reveal(`.logos_img, .program_card, .pricing_card`, {interval: 100})
-sr.reveal(`.choose_img, .calculate_content`, {origin: 'left'})
-sr.reveal(`.choose_content, .calculate_img`, {origin: 'right'})
+sr.reveal(`.home_img`, { delay: 700, origin: 'bottom' })
+sr.reveal(`.logos_img, .program_card, .pricing_card`, { interval: 100 })
+sr.reveal(`.choose_img, .calculate_content`, { origin: 'left' })
+sr.reveal(`.choose_content, .calculate_img`, { origin: 'right' })
+
+
+/* =============== CALCULATE JS =============== */
+/* Added JS variables to handle BMI calculation form elements */
+const calculateForm = document.getElementById('calculate-form'),
+    calculateCm = document.getElementById('calculate-cm'),
+    calculateKg = document.getElementById('calculate-kg'),
+    calculateMessage = document.getElementById('calculate-message')
