@@ -250,3 +250,9 @@
 .show-menu {
     right: 0;
   }
+
+  /* Change background header */
+.bg-header {
+    background-color: var(--body-color);
+    box-shadow: 0 4px 8px #090b0b4d;
+  }
