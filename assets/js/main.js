@@ -111,3 +111,12 @@ const calculateForm = document.getElementById('calculate-form'),
     calculateCm = document.getElementById('calculate-cm'),
     calculateKg = document.getElementById('calculate-kg'),
     calculateMessage = document.getElementById('calculate-message')
+
+const calculateBMI = (e) => {
+    e.preventDefault()
+
+    // We check if the fields have a value
+    if (calculateCm.value === '' || calculateKg.value === '') {
+        
+    }
+}
