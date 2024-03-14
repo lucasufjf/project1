@@ -133,5 +133,18 @@ const calculateBMI = (e) => {
         const cm = calculateCm.value / 100,
             kg = calculateKg.value,
             bmi = Math.round(kg / (cm * cm))
+        
+        // show BMI status
+        if(bmi < 18.5) {
+            // add colour and display message
+            calculateMessage.classList.add('color-green')
+            calculateMessage.textContent = `Your BMI is ${bmi}, is underweight`
+        } else if(bmi < 25) {
+            calculateMessage.classList.add('color-green')
+            calculateMessage.textContent = `Your BMI is ${bmi}, is normal`
+        } else {
+            calculateMessage.classList.add('color-green')
+            calculateMessage.textContent = `Your BMI is ${bmi}, is overweight`
+        }
     }
 }
