@@ -150,5 +150,10 @@ const calculateBMI = (e) => {
         // clean input fields
         calculateCm.value = ''
         calculateKg.value = ''
+
+        // remove message after 4s
+        setTimeout(() => {
+            calculateMessage.textContent = ''
+        }, 4000)
     }
 }
