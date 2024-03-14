@@ -123,5 +123,10 @@ const calculateBMI = (e) => {
 
         // Show message
         calculateMessage.textContent = 'Please, fill all the fields*'
+        
+        // Remove message 3s later
+        setTimeout(() => {
+            calculateMessage.textContent = ''
+        }, 3000)
     }
 }
